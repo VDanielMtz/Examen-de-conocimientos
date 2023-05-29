@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+	<html lang="es">
+		<head>	  
+			  <script>
+				const listItems = document.querySelectorAll("#myList li");
+				listItems.forEach(item => {
+				  item.addEventListener("click", function() {
+					this.classList.toggle("selected");
+				  });
+				});
+			  </script>
+			  
+			<title>ExamenConocimientos</title>
+			<style>
+				.content-bar {
+				  background-color: #000000;
+				  padding: 20px;
+				  border-radius: 20px;
+				}
+				.content-bar a {
+				  margin-right: 40px;
+				  color: aliceblue;
+				}
+				body {
+					background-color: #fcfcfc;
+      				animation: animatedBackground 15s linear infinite;
+					color: #ffffff;
+					
+				}
+				@keyframes animatedBackground {
+      				0% { background-color: #15915b; }
+      				50% { background-color: #080808; }
+     				100% { background-color: #15915b; }
+				}
+				table img {
+    				width: 100px;
+    				height: 100px;
+  				}
+				body img{
+					width: 200px;
+    				height: 200px;
+   	 				background-size: cover;
+    				background-position: center;
+    				clip-path: ellipse(50% 50% at 50% 50%);
+					position: center;
+				}
+				table {
+    				border-collapse: separate;
+    				width: 50%;
+					border-radius: 10px;
+					border-spacing: 50px;
+ 				}
+				th, td {
+    				padding: 10px;
+    				text-align: center;
+    				border-bottom: 1px solid #020202;
+					border-radius: 20px;
+ 				}
+				th {
+    				background-color: #4db667;
+					border-radius: 20px;
+  				}
+				tr:hover {
+    				background-color: #4db667;
+					border-radius: 20px;
+ 	 			}
+				h2 {
+    				position: absolute;
+    				top: 10%;
+    				left: 40%;
+    				transform: translate(-50%, -50%);
+    				text-align: middle;
+  				}
+				  .image-container {
+    				margin-left: 50px;
+  				}
+				p {
+      				margin: 20px;
+					font-size: 25px;
+    			}
+				ul {
+  					list-style-type: square;
+  					color: rgb(241, 241, 241);
+  					font-size: 20px;
+				}
+				ul li {
+  					margin-bottom: 10px;
+					padding-left: 20px;
+				}
+  				.selected {
+    				background-color: lightblue;
+    				font-weight: bold;
+ 				}
+				ul li:hover {
+  					background-color: rgb(0, 0, 0);
+  					transition: background-color 0.3s ease;
+				}
+			  </style>
+		</head>
+		<body>
+				<div class="image-container">
+					<img src="imagenes/WhatsApp Image 2023-05-28 at 5.49.07 PM.jpeg">
+				</div>
+				<h2>Soy Victor Daniel Marintez Torres <br>SOFTWARE DEVELOPER</h2>
+				<div class="content-bar">
+					<a href="#seccion1">SOBRE MI</a>
+					<a href="#seccion2">MIS HABILIDADES </a>
+					<a href="#seccion3">HISTORIAL ACADEMICO</a>
+					<a href="#seccion4">MIS ASPECTOS DESTACADOS</a>
+					<a href="#seccion5">LENGUAJES QUE DOMINO</a>
+					<a href="#seccion6">CONTACTO</a>
+				  </div>
+				  <h3 id="seccion1">SOBRE MI</h3>
+				  <p>hola, soy un desarrollador ambivertido, tengo mis ratos de introvertido y mis ratos de extrovertido, geniunamente no conozco lo que es la pena y me
+					encanta aprender nuevas habilidades como lo serian ahora las habilidades de un front-end que si bien no es mi especialidad, tampoco soy un novato en 
+					este campo, me especializo mas en logica programacional y en administracionque en ambitos esteticos pero eso no quita mis ganas de intentar las cosas
+				  </p>
+				  <h3 id="seccion2">MIS HABILIDADES</h3>
+				  <ul>
+					<li>logica programacional en lenguajes de alto nivel como lo son:</li>
+					<ul>
+						<li>c++</li>
+						<li>JAVA</li>
+						<li>PYTHON</li>
+						<li>PHP</li>
+					</ul>
+				  </ul>
+				
+				  <h3 id="seccion3">MI HISTORIA ACADEMICA</h3>
+				  <ul>
+					<li><h4>TECNOLOGICO DE ESTUDIOS SUPERIORES DE COACALCO</h4></li>
+					<ul>
+						<li>comence a estudiar la carrea de Ingenieria en Sitemas computacionales en el 2018, de ahi estuve en la carrera hasta el 2020 que nos encerraron por pandemia
+							debido a cuestiones personales, la deje y me dedique a buscar trabajo
+						</li>
+					</ul>
+					<li><h4>UCAMP</h4></li>
+					<ul>
+						<li>Aqui estoy estudiando para obtener mi certificado como programador de Python desde inicios del 2023 hasta la actualidad </li>
+					</ul>
+					<li><h4>UNIVERSIDAD UTEL</h4></li>
+					<ul>
+						<li>TOMANDO UN CURSO INTENSIVO DE LA INGENIERIA EN SISTEMAS COMPUTACIONALES</li>
+					</ul>
+					<li><h4>INGLES</h4></li>
+					<ul>
+						<li>En curso la certificadode nivel B2 de INGLES</li>
+					</ul>
+				  </ul>
+
+				  <h3 id="seccion4">MIS ASPECTOS DESTACADOS</h3>
+				  <ol>
+					<li>BUENA COMUNICACION</li>
+					<li>AGILIDAD EN LA RESPUESTA A PROBLEMAS</li>
+					<li>ADAPTABILIDAD A ENTORNOS NO PREEVISTOS</li>
+					<li>MANEJO Y OPTIMIZACION DE RECURSOS</li>
+					<li>BUEN MANEJO DE LAS SITUACIONES BAJO PRESION</li>
+					<li>GENERACION DE IDEAS</li>
+					<li>EXPERIENCIA CON MODELOS DE LENGUAJE
+						BASADOS EN INTELIGENCIA ARTIFICIAL</li>
+				  </ol>
+
+				  <h3 id="seccion5">LENGUAJES QUE DOMINO</h3>
+				  <table>
+					<tr>
+					  <th>LENGUAJES</th>
+					  <th>LOGO</th>
+					</tr>
+					<tr>
+					  <td>JAVA</td>
+					  <td><img src="imagenes/226777.png" alt="logo de java"></td>
+					</tr>
+					<tr>
+						<td>C++</td>
+						<td><img src="imagenes/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue-removebg-preview.png" alt="logo de C++"></td>
+					  </tr>
+					  <tr>
+						<td>PYTHON</td>
+						<td><img src="imagenes/Python-logo-notext.svg.png" alt="logo de PYTHON"></td>
+					  </tr>
+					  <tr>
+						<td>HTML5</td>
+						<td><img src="imagenes/HTML5_logo_and_wordmark.svg.png" alt="logo de HTML5"></td>
+					  </tr>
+					  <tr>
+						<td>CSS3</td>
+						<td><img src="imagenes/CSS3_logo_and_wordmark.svg.png" alt="logo de csS3"></td>
+					  </tr>
+					  <tr>
+						<td>SQL</td>
+						<td><img src="imagenes/Sql_data_base_with_logo.png" alt="logo de SQL"></td>
+					  </tr>
+				  </table>
+				<h3 id="seccion6">CONTACTO</h3>  	
+		</body>
+
+	</html>
